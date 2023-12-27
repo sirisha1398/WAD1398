@@ -1,0 +1,110 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M Online Clothing Store</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e66465, #9198e5);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+        #frame1,
+        #frame2,
+        #frame3 {
+            display: flex;
+        }
+        #frame1 {
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #fd79a8, #7f8c8d);
+        }
+        #logo {
+            margin-left: 20px;
+            width: 80px;
+            height: auto;
+        }
+        #header {
+            flex: 1;
+            text-align: right;
+            padding-right: 20px;
+        }
+        h1 {
+            margin: 0;
+            color: white;
+        }
+        #frame2 {
+            height: 40px;
+            background-color: #ddd;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            flex: 1;
+            padding: 0 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        #frame3 {
+            height: calc(100vh - 140px);
+            display: flex;
+        }
+        #services {
+            flex: 1;
+            padding: 20px;
+        }
+        #description {
+            flex: 2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="frame1">
+            <img id="logo" src="https://www.logo.wine/a/logo/H%26M/H%26M-Logo.wine.svg" alt="H&M Logo">
+            <div id="header">
+                <h1>H&M Online Clothing Store</h1>
+            </div>
+        </div>
+    </header>
+    <div id="frame2">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+            <a href="#">New Collection</a>
+            <a href="#">Catalogue</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </div>
+    <div id="frame3">
+        <div id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+            </ul>
+        </div>
+        <div id="description">
+            <h2>Service Details</h2>
+            <p>Click on any service to view its details.</p>
+            <p>Visit the official H&M website: <a href="https://www2.hm.com/en_in/index.html" target="_blank">H&M</a></p>
+        </div>
+    </div>
+</body>
+</html>
