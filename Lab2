@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M Online Clothing Store</title>
+    <style id="style1">
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #ffff99; color: #333; }
+        header { background-color: #333; color: white; padding: 10px; text-align: center; }
+        #frame1 { height: 100px; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(to right, #3498db, #2ecc71); padding: 0 20px; }
+        #logo { width: 80px; height: auto; }
+        #header { flex: 1; text-align: center; }
+        h1 { margin: 0; color: white; }
+        #frame2 { height: 40px; background-color: #3498db; align-items: center; border-radius: 5px; }
+        nav a { text-decoration: none; color: #fff; font-weight: bold; padding: 10px; border-radius: 5px; transition: background-color 0.3s ease; }
+        nav a:hover { background-color: #2980b9; }
+        #frame3 { height: calc(100vh - 140px); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        #services, #description { width: 80%; padding: 20px; margin: 10px; text-align: center; background-color: #ecf0f1; border: 2px solid #bdc3c7; border-radius: 10px; }
+    </style>
+    <style id="style2">
+        body { margin: 0; padding: 0; font-family: 'Georgia', serif; background: #ffcc99; color: #663300; }
+        header { background-color: #996633; color: white; padding: 10px; text-align: center; }
+        #frame1 { height: 100px; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(to right, #ffcc99, #996633); padding: 0 20px; }
+        #logo { width: 80px; height: auto; }
+        #header { flex: 1; text-align: center; }
+        h1 { margin: 0; color: white; }
+        #frame2 { height: 40px; background-color: #996633; align-items: center; border-radius: 5px; }
+        nav a { text-decoration: none; color: #fff; font-weight: bold; padding: 10px; border-radius: 5px; transition: background-color 0.3s ease; }
+        nav a:hover { background-color: #cc9966; }
+        #frame3 { height: calc(100vh - 140px); display: flex; align-items: center; justify-content: space-around; }
+        #services, #description { width: 40%; padding: 20px; margin: 10px; text-align: center; background-color: #fff4e6; border: 2px solid #cc9966; border-radius: 10px; }
+    </style>
+    <style id="style3">
+        body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background: #4d1414; color: #fff; }
+        header { background-color: #333; color: white; padding: 10px; text-align: center; }
+        #frame1 { height: 100px; display: flex; align-items: flex-end; justify-content: space-between; background: linear-gradient(to right, #444, #000); padding: 0 20px; }
+        #logo { width: 80px; height: auto; }
+        #header { flex: 1; text-align: center; }
+        h1 { margin: 0; color: white; }
+        #frame2 { height: 40px; background-color: #000; align-items: center; border-radius: 5px; }
+        nav a { text-decoration: none; color: #fff; font-weight: bold; padding: 10px; border-radius: 5px; transition: background-color 0.3s ease; }
+        nav a:hover { background-color: #555; }
+        #frame3 { height: calc(100vh - 140px); display: flex; flex-direction: row-reverse; align-items: center; justify-content: space-around; }
+        #services, #description { width: 40%; padding: 20px; margin: 10px; text-align: center; background-color: #444; border: 2px solid #333; border-radius: 10px; }
+    </style>
+    <style id="style4">
+        body { margin: 0; padding: 0; font-family: 'Comic Sans MS', cursive, sans-serif; background: linear-gradient(to right, #ff6b6b, #4ecdc4); color: #fff; }
+        header { background-color: #333; color: white; padding: 10px; text-align: center; }
+        #frame1 { height: 100px; display: flex; align-items: flex-end; justify-content: center; background: linear-gradient(to right, #ffcc29, #f76c6c); }
+        #logo { width: 80px; height: auto; margin-right: 20px; }
+        h1 { margin: 0; color: white; }
+        #frame2 { height: 40px; background-color: #f76c6c; align-items: center; border-radius: 5px; }
+        nav a { text-decoration: none; color: #fff; font-weight: bold; padding: 10px; border-radius: 5px; transition: background-color 0.3s ease; }
+        nav a:hover { background-color: #ff5e62; }
+        #frame3 { height: calc(100vh - 140px); display: flex; flex-direction: column; align-items: center; justify-content: space-around; }
+        #services, #description { width: 80%; padding: 20px; margin: 10px; text-align: center; background-color: #ffeaa7; border: 2px solid #fab1a0; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div id="styles">
+        <button onclick="applyStyle('style1')">Style 1</button>
+        <button onclick="applyStyle('style2')">Style 2</button>
+        <button onclick="applyStyle('style3')">Style 3</button>
+        <button onclick="applyStyle('style4')">Style 4</button>
+    </div>
+    <header>
+        <div id="frame1">
+            <img id="logo" src="https://www.logo.wine/a/logo/H%26M/H%26M-Logo.wine.svg" alt="H&M Logo">
+            <div id="header">
+                <h1>H&M Online Clothing Store</h1>
+            </div>
+        </div>
+    </header>
+    <div id="frame2">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+            <a href="#">New Collection</a>
+            <a href="#">Catalogue</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </div>
+    <div id="frame3">
+        <div id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+            </ul>
+        </div>
+        <div id="description">
+            <h2>Service Details</h2>
+            <p>Click on any service to view its details.</p>
+            <p>Visit the official H&M website: <a href="https://www2.hm.com/en_in/index.html" target="_blank">H&M</a></p>
+        </div>
+    </div>
+    <script>
+        function applyStyle(styleId) {
+            const styles = document.querySelectorAll('style');
+            styles.forEach(style => { style.disabled = true; });
+            const selectedStyle = document.getElementById(styleId);
+            selectedStyle.disabled = false;
+        }
+    </script>
+</body>
+</html>
